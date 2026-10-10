@@ -1,0 +1,3 @@
+I learnt the Git Today
+Practiced various Linux and Git Commands
+
