@@ -1,0 +1,97 @@
+#Day 04 - Basic CI/CD Concepts with Jenkins & GitLab
+
+
+### Jenkinsfile -- BAsic CI Pipeline
+
+pipeline  {
+	agent any
+	stages {
+		stage('Build') {
+
+		  steps  {
+		    echo 'Building Project'
+		  }
+		}
+		stage('Deploy') {
+		  steps {
+		    echo 'Deploying Application'
+		  }
+		}
+	}
+}
+
+
+### GitLab CI/CD -- Basic Pipeline
+stages:
+  - build
+  - test
+  - deploy
+
+build:
+  stage: build
+  script:
+    - echo "Building Project"
+
+test:
+  stage: test
+  script:
+    - echo "Runnning tests"
+
+deploy:
+  stage: deploy
+  script:
+    - echo "Deploying application"
+
+
+
+#### Ansible -- Install and Configure Nginx
+
+- name: Install and configure Nginx
+  hosts: all
+  become: yes
+  tasks:
+    - name: Install Nginx
+      yum:
+	name: nginx
+	state: present
+    - name: Configure Nginx
+      template:
+	src: nginx.conf.j2
+	dest: /etc/nginx/nginx.conf
+    - name: Start Nginx service
+      service:
+	name: nginx
+	state: started
+	enabled: yes
+
+#### Terraform -- EC2 with Security Group
+resource "aws_security_group" "example" {
+  name = "example_security_group"
+  description = "Allow SSH and HTTP"
+  ingress {
+    from_port = 22
+    to_port = 22
+    protocol = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  egress {
+    from_port = 0
+    to_port = 0
+    protocol = "-1"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+}
+
+
+## Docker Apache Container
+
+FROM ubuntu:22.04
+RUN apt update && apt install apache2 -y
+RUN echo "Hello Pathnex" > /var/www/html/index.html
+CMD ["apachectl", "-D", "FOREGROUND"]
+
+
+### BAsh REal Path
+/var/www/html
+
