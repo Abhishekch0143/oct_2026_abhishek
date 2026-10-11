@@ -1,0 +1,7 @@
+#Day 05
+
+1. Joined the morning Class for 3 hours
+2. LEarns the AWS Interview Related questions through PDF
+3. Hands-On AWS cloud like AWS EC2, EBS, IAM, S3
+4. Joined the evening class for 2 hours
+

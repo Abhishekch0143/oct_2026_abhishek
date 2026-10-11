@@ -1,0 +1,80 @@
+### Day 07 - Automating Cloud Infrastructure With Terraform & Ansible
+### Ansible -- Setup Nginx with custom config
+
+- name: Steup Nginx with the custom config
+  hosts: all
+  become: yes
+  taks:
+    - name: Install nginx
+      yum:
+        name: nginx
+	state: present
+    - name: Copy Custom nginx.conf
+      copy:
+	src: nginx.conf
+	dest: /etc/nginx/nginx.conf
+    - name: Start nginx service
+      service:
+	name: nginx
+	state: started
+	enabled: yes
+
+
+### Terraform -- Provisioning EC2 with IAM Roles
+resource "aws_iam_role" "ec2_role" {
+  name = "Pathnex_ec2_role
+  assume_role_policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [
+      {
+	Action = "sts:AssumeRole"
+	Effect = "Allow"
+	Principal = {
+	  Service = "ec2.amazonaws.com"
+        }
+      },
+    ]
+  }
+}
+
+
+resource "aws_instance" "pathnex_ec2" {
+  ami = "ami-0abc1234abc1234"
+  instance_type = "t3.medium"
+  tags = {
+    Name = "Pathnex-Ec2"
+  }
+}
+
+
+#### Kubernetes -- ConfigMap and Secret Management
+apiVersion: v1
+kind: Secret
+metadata:
+  name: pathnex-secret
+type: Opaque
+data:
+  password: 3eG2sdg34f=
+
+
+### Shell Script -- Archive Logs
+
+#!/bin/bash
+tar -czf /var/log/archived_log.tar.gz /vr/log/*.log
+
+
+### Docker Java Application
+# Javascript
+class Hello {
+  public static void main(string[] args {
+    System.out.println("Hello Pathnex");
+  }
+}
+
+#DockerFile
+FROM openjdk:17
+WORKDIR /opt/patnex/java-app
+COPY Hello.java /opt/pathnext/java-app/
+RUN javac /opt/pathnex/java-app/Hello.java
+CMD ["java", "-cp", "/opt/pathnext/java-app", "Hello"]
+

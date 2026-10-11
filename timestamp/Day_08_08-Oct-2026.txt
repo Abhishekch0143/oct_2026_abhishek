@@ -1,0 +1,12 @@
+# Day 8
+
+1. Wake Up at 5:00 AM
+2. Joined the Morning Class at 6AM
+3. Practice some Git and Linux Commands in Office
+4. Revise the AWS Services 
+5. Joined the Evening Class at 7:30PM
+6. Back to home at 8PM 
+7. Did the coding practice for 30 min.
+8. Recorded the Intro for the Day
+9. Commented on the Youtube Video
+10. Prepared for the next day.
