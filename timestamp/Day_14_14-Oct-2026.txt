@@ -1,0 +1,13 @@
+#Day 14
+
+1. Wake up at 5AM and Prepared for the morning session.
+2. Joined the Morning session at 6AM which ends at 11AM.
+3. Practiced the linux and git commands for 2 hours.
+4. Revised the kubernetes notes pdf and learn more about it f>
+5. Did the coding practice for 1 hour and practice git comman>
+6. Like and commented on the youtube video
+7. Created the Introduction Video for the Day.
+8. Work on English speaking enhancing vocabulary.
+9. Prepared for the next day lecture.
+10. Unable to Join Evening Class due to off-hours deployment at Office
+
