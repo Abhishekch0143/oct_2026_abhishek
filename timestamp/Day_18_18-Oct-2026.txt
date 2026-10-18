@@ -1,0 +1,9 @@
+#Day 18
+
+1. Wake up at 5AM and prepared for the morning class
+2. Joined the Morning session at 6AM for 3 hours
+3. Learn the Concept of Terraform for 2 hours did the practical implemetations
+4. Joined the evening session for 30 min.
+5. Completed the daily task for commenting and like the videos
+6. Created the Introduction video for the day.
+
