@@ -1,0 +1,10 @@
+#Day 16
+
+1. Joined the Morning class in the morning at 6
+2. Go to office at 9 and joined the class through YouTube
+3. Learn the concept of Helm through PDF for 1 hour
+4. Tried the practical implemetation through AWS Terraform to implement AWS EKS 1hour
+5. Joined the Evening Classs for 30 minutes.
+6. Watched the Old related videos
+7. Liked and Commented on the Youtube Video
+8. Created the Introduction Video for the day.
