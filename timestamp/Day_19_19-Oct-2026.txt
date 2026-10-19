@@ -1,0 +1,10 @@
+#Day 19
+
+1. Wake up at 5AM
+2. Attended the Morning Class at 6AM
+3. Like and Commented on the Video 
+4. Learned the Terraform for 1hour
+5. Attended the Evening Class for 30min.
+6. Completed the task of Coding Practice and updated the timestamp
+7. Created the Introduction video for the Day.
+
