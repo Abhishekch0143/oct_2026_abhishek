@@ -1,0 +1,9 @@
+# Day 17
+
+1. Wake up at 5 and prepared for the morning class
+2. Take the morning class at 6AM
+3. Learn the concept of Helm and ArgoCD for 3 hours
+5. Work on the communication skills
+6. Attend the evening session for 1 hour.
+7. Practice the coding part for 30min. and updated the timestamp
+
