@@ -1,0 +1,7 @@
+# Day 20
+
+1. Today I learn about Terraform and Kubernetes
+2. Practical implementation of K8's 
+3. Done the coding practice task and updated the timestamp
+4. Created the Introduction video for the day.
+
