@@ -1,0 +1,10 @@
+#Day 22
+
+1. Wake up at 5AM
+2. Joined the morning Class at 6:30AM
+3. Learn About Grafana and prometheus for 2 hours
+4. Complete the task to comment and like youtube video
+5. Joined the evening session at 7 for 30 min.
+6. Complted the coding practice and updated the timestamp
+7. Completed the task for intro. video creation for the day.
+
