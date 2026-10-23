@@ -1,0 +1,10 @@
+# Day 21
+
+1. Wake up early at 5AM
+2. Joined the morning session at 6AM for Ansible
+3. Learn the Concept of Ansible and Practice the commands for 2hours
+4. Joined the evening session for 30 min.
+5. Completed the coding practice task and updated the time stamp
+6. Created the Introduction Video for the day.
+7. Completed the 4 Task for the day.
+
