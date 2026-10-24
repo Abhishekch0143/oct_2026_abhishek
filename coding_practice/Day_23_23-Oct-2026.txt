@@ -1,0 +1,91 @@
+#Day 23 - Serverless Architecture and Microservices
+
+##### Ansible - Deploy Lambda Functions using AWS CLI
+
+- name: Deploy AWS Lambda Function
+  hosts: manager
+  tasks:
+    - name: Create Lambda function
+      command: aws lambda create-function --function-name pathnex-lambda --runtime python3.8 --role 
+
+## Terraform - Serverless API Gatewat with Lambda Integration
+resource "aws_api_gateway_rest_api" "abhishek_api" {
+  name = "abhishek-api"
+  description = "abhishek API"
+}
+
+resource "aws_lambda_function" "abhishek_lambda" {
+  function_name: "abhishek-lambda"
+  runtime = "python3.8"
+  role = aws_iam_role.lambda_exec_role.arn
+  handler = "lambda_function.lambda_handler"
+  filename = "lambda.zip"
+}
+
+resource "aws_Api_gateway_integration" "lambda_integration" {
+  rest_Api_id = aws_api_gateway_rest_api.pathnex_api.id
+  resource_id = aws_api_gateway_resource.pathnex_Resource.id
+  http_method = aws_api_gateway_method.pathnex_method.http_method
+  integration_http_method = "POST"
+  type = "AWS_PROXY"
+  uri = aws_lambda_function.abhishek_lambda.invoke_arn
+}
+
+
+### Kubernetes - Deployment Microservices Using Helm
+helm install pathnex-microservice ./microservice-chart
+
+
+### Jenkinsfile - Deploy serverless Application with Lambda
+pipeline {
+  agent any
+  stages {
+    stage('Build') {
+      steps {
+        echo 'Building Lambda function...'
+        sh 'zip -r lambda.zip lambda/'
+      }
+    }
+    stage('Deploy to AWS Lambda') {
+      steps {
+        script {
+	  sh 'aws lambda update-function-code --function-name abhishek-lambda --zip-file file://lambda.zip'
+	}
+      }
+    }
+  }
+}
+
+
+### GitLab CI/CD - Deploy Lambda Function
+stages:
+  - build
+  - deploy
+
+build:
+  stage: build
+  script:
+    - zip -r lambda.zip lambda/
+
+deploy:
+  stage: deploy
+  script:
+    - aws lambda update-function-code --function-name pathnex-lambda --zip-file file://lambda.zip  
+
+### Docker 
+
+#stage 1 - Build Stage
+FROM maven:3.9-eclipse-temurin-17 AS builder
+WORKDIR /opt/pathnex/java-build
+COPY . /opt/pathnex/java-build/
+RUN mvn clean package
+
+#Stage 2 - Production Stage
+FROM tomcat:9
+WORKDIR /usr/local/tomcat/webapps
+COPY --from=builder /opt/pathnex/java-build/target/*.war /usr/local/tomcat/webapps/
+EXPOSE 8080
+CMD ["catalina.sh", "run"]
+
+
+

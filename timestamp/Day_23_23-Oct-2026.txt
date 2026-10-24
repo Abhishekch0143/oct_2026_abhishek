@@ -1,0 +1,9 @@
+#Day 23
+
+1. Wake up at 5:30AM
+2. Joined the Morning class at 6:10AM till 10PM
+3. Learn about the concept of ELK stack
+4. Practiced kubernetes and Terraform for 2 hours.
+5. Completed the task to comment and like on the video
+6. Joined the evening session for 30min.
+7. Completed the task to create the intro. video for the day.
