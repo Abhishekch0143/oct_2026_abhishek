@@ -1,0 +1,9 @@
+#Day 23
+
+1. Wake up at 6AM
+2. Joined the morning class at 6:40AM
+3. Like and commented the video
+4. Completed the 4 task for the day.
+5. Joined the evening session for 1hour.
+6. Completed the task to create intro video for the day.
+7. LEarn terraform for 1 hour.
