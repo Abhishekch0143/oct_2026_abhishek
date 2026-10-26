@@ -1,0 +1,8 @@
+#Day
+
+1. Did the practical implementaion for Kafka using AWS for 3 hours
+2. watch the Kafka video online for 1 hours
+3. Joined the evening session for 30 min.
+4. Created the introduction video for the day
+5. Completed the 4 task for the day.
+
