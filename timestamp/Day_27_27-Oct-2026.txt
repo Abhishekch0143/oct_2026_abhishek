@@ -1,0 +1,9 @@
+#Day 27
+
+1. Wake up at 7AM
+2. Joined the morning session
+3. LEarn the concept of SSL and TLS certificates and did hands-on
+4. Liked and commented on the video
+5. Created the intro. video for the day.
+6. Joined the evening session for 30min.
+7. LEarn the kafka with practical for 1 hour.
