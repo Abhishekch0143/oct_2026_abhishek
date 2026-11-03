@@ -1,0 +1,8 @@
+# Day 28
+
+1. Wake up at 6AM 
+2. Joined the morning session at 7AM
+3. Learned the interview questions for 1hours
+4. Learn CI/CD using Jenkins with practical for 3 hours
+5. Created the introduction video for the day.
+6. Compelted the Task for the day.
